@@ -27,3 +27,9 @@ reports/*
 # BUT allow PDF reports (for GitHub)
 !reports/
 !reports/*.pdf
+
+# Ignore all generated PDF reports
+reports/*.pdf
+
+# But keep one sample report
+!reports/8.8.8.8_20260209_115908_report.pdf
