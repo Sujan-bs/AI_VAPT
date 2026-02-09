@@ -1,0 +1,60 @@
+{
+  "target": "scanme.nmap.org",
+  "scan_target": "scanme.nmap.org",
+  "nmap": {
+    "raw": "Starting Nmap 7.98 ( https://nmap.org ) at 2026-02-09 05:17 -0500\nNmap scan report for scanme.nmap.org (45.33.32.156)\nHost is up (0.21s latency).\nOther addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f\nNot shown: 996 closed tcp ports (reset)\nPORT      STATE SERVICE    VERSION\n22/tcp    open  ssh        OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)\n80/tcp    open  http       Apache httpd 2.4.7 ((Ubuntu))\n9929/tcp  open  nping-echo Nping echo\n31337/tcp open  tcpwrapped\nService Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel\n\nService detection performed. Please report any incorrect results at https://nmap.org/submit/ .\nNmap done: 1 IP address (1 host up) scanned in 22.67 seconds\n",
+    "ports": [
+      {
+        "port_proto": "22/tcp",
+        "state": "open",
+        "service": "ssh",
+        "version": "OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)"
+      },
+      {
+        "port_proto": "80/tcp",
+        "state": "open",
+        "service": "http",
+        "version": "Apache httpd 2.4.7 ((Ubuntu))"
+      },
+      {
+        "port_proto": "9929/tcp",
+        "state": "open",
+        "service": "nping-echo",
+        "version": "Nping echo"
+      },
+      {
+        "port_proto": "31337/tcp",
+        "state": "open",
+        "service": "tcpwrapped",
+        "version": ""
+      }
+    ]
+  },
+  "web": {
+    "url": "http://scanme.nmap.org",
+    "status_code": 200,
+    "server": "Apache/2.4.7 (Ubuntu)",
+    "security_headers": {},
+    "missing_headers": [
+      "Content-Security-Policy",
+      "Strict-Transport-Security",
+      "X-Frame-Options",
+      "X-Content-Type-Options",
+      "Referrer-Policy",
+      "Permissions-Policy"
+    ],
+    "notes": [
+      "Website is using HTTP (not HTTPS). This is insecure for login/data."
+    ]
+  },
+  "risk": {
+    "score": 65,
+    "level": "MEDIUM",
+    "reasons": [
+      "Some open ports detected.",
+      "Remote access service exposed: SSH",
+      "Many security headers are missing.",
+      "Website is not using HTTPS."
+    ]
+  }
+}
