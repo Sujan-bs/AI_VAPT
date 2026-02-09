@@ -1,8 +1,19 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
 venv/
+.env
+
+# Logs / Outputs
+logs/
 outputs/
 reports/
-logs/
 scans/
-.env
+
+# OS junk
+.DS_Store
+Thumbs.db

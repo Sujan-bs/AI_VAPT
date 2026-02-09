@@ -1,36 +1,34 @@
-# AI-VAPT (Automated Vulnerability Assessment & Reporting Tool)
+cat > README.md << 'EOF'
+# AI-VAPT (AI-Based Vulnerability Assessment & Penetration Testing)
 
-AI-VAPT is an automated Vulnerability Assessment and Penetration Testing (VAPT) tool built on Kali Linux.
-It performs fast scanning using Nmap + Nuclei + Web Header checks and generates a professional PDF report with screenshots and an AI Executive Summary (Ollama).
+AI-VAPT is an automated vulnerability assessment tool that performs scanning on a target IP address or domain and generates a professional PDF security report.  
+This project integrates AI (Ollama LLM) to create an executive summary and recommendations based on scan results.
 
 ---
 
 ## Features
-- Accepts IP address or Domain as input
-- Auto resolves domain → IP
-- Runs Nmap fast scan (top 1000 ports)
-- Detects HTTP/HTTPS services automatically
-- Runs Nuclei scan (fast limited templates)
-- Captures website screenshot using Playwright
-- Generates a clean professional PDF report (A4 format)
-- Adds AI Executive Summary using Ollama (Local LLM)
+- Nmap port scanning (fast network reconnaissance)
+- Web URL extraction and basic web checks
+- AI-generated executive summary using Ollama
+- Automatic professional PDF report generation (A4 format)
+- Organized output storage with timestamps
 
 ---
 
-## Tools Used
+## Tools & Technologies Used
+- Python 3
 - Nmap
-- Curl
-- Nuclei
-- Playwright
-- ReportLab
-- Ollama (Local AI Model)
+- Ollama (Local LLM AI)
+- ReportLab (PDF generation)
+- Playwright (web automation)
+- Kali Linux
 
 ---
 
 ## Installation
 
-### 1) Clone repository
+### 1) Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/AI-VAPT.git
-cd AI-VAPT
+git clone https://github.com/Sujan-bs/AI_VAPT.git
+cd AI_VAPT
 
